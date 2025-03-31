@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "lan-server-information",
+	"version": "${version}",
+	"name": "LAN Server Information",
+	"description": "Removes the difference in the GUI between manually added servers and those received from the local network.",
+	"authors": [
+		"IceFog"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/lan-server-information/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"icefog.LANServerInformation"
+		]
+	},
+	"mixins": [
+		"lan-server-information.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "icefog.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"client": [
+		"ServerEntryConstructorInvokerMixin",
+		"ServerEntryMixin"
+	]
+}
