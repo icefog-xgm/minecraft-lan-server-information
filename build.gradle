@@ -5,8 +5,8 @@ plugins {
 }
 
 modrinth {
-	token = MODRINTH_TOKEN
-	projectId = MODRINTH_PROJECT_ID
+	token = System.getenv('MODRINTH_TOKEN')
+	projectId = '6WXEnTGe'
 	uploadFile = remapJar
 	gameVersions = ['1.21.5']
 	loaders = ['fabric']
